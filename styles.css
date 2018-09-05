@@ -1,0 +1,182 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: whitesmoke;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#cacaca;
+    height: 180px;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 10px;
+    border: 10px solid white;
+    margin: 20px;
+}
+
+.nav-wrapper > .nameHeading {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.nav-wrapper > .links-wrapper {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 5px;
+}
+
+.nav-wrapper > .links-wrapper a {
+    border-right: 10px solid transparent;
+    border-left: 10px solid  transparent;
+    transition: 1s;
+}
+
+.nav-wrapper > .links-wrapper a:hover {
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.main-wrapper {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-wrapper img {
+    border: 10px solid white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.main-wrapper > .bio {
+    font-size: 1.3em;
+    line-height: 1.3;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color:#cacaca;
+    height: 80px;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 10px;
+    border: 10px solid white;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.footer-wrapper a {
+    transition: 2s;
+}
+
+.footer-wrapper a:hover {
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+/* CSS for Contact Page */
+.contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contactHeading {
+    width: 66%;
+}
+
+
+/* CSS for Portfolio 
+Page */
+
+
+.portfolio-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+
+.portfolio-image-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    flex-wrap: wrap;
+
+}
+
+.portfolio-image-wrapper img {
+    border: 10px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.portfolioComing {
+    font-size: 2.5em;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .bio {
+        border: 10px solid white;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-wrapper img {
+        width: 400px;
+        height: auto;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+    }
+
+    }
+
+@media only screen and (max-width: 640px) {
+    .links-wrapper {
+        width: 200px;
+    }
+
+    .main-wrapper img {
+        width: 300px;
+        height: auto;
+    }
+
+    .bio {
+        font-size: 80%!important;
+    }
+}
+
+/* Media Query - Contact Page * no changes*/
+
+@media only screen and (max-width: 640px) {
+    .portfolioComing {
+        font-size: 2em;
+    }
+}
